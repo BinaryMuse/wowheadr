@@ -32,7 +32,7 @@ module Wowheadr
       alias :lvl :level
 
       # Whether or not to show the tooltip for the buff the spell provides,
-      # rathern than for the spell itself.
+      # rather than for the spell itself.
       def buff(buff)
         self.set(:buff, buff)
       end
