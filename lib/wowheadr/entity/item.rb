@@ -70,7 +70,7 @@ module Wowheadr
         self.set(:rand, enchant_id)
       end
       alias :rand :random_enchantment
-      alias :rand_enchat :random_enchantment
+      alias :rand_enchant :random_enchantment
     end
   end
 end
