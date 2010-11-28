@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Brandon Tilley"]
   s.email       = ["binarymuse@binarymuse.net"]
-  s.homepage    = "https://github.com/BinaryMuse/wowhead"
+  s.homepage    = "https://github.com/BinaryMuse/wowheadr"
   s.summary     = "wowheadr #{Wowheadr::VERSION}"
   s.description = "Leverage the power of Wowhead for your Ruby projects."
 
