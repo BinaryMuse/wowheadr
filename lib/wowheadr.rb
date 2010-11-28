@@ -1,4 +1,5 @@
 require 'wowheadr/version'
 require 'wowheadr/entity/item'
+require 'wowheadr/entity/spell'
 require 'wowheadr/uri'
 require 'wowheadr/uri/rel'
