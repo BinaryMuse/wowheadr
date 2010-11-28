@@ -9,7 +9,7 @@ module Wowheadr
     # tag by calling +to_s+ on the object.
     #
     # The methods to modify the data inside a Rel is protected, and a Rel
-    # object can not be instantiated--instead, subclasses of Rel which
+    # object can not be instantiated--instead, subclasses of Rel (which
     # represent specific Wowhead entries with known rel attributes) should
     # be created and used instead.
     module Rel
