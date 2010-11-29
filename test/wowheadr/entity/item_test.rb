@@ -11,6 +11,11 @@ class ItemTest < Test::Unit::TestCase
     assert_equal "item=12345", @item.to_s
   end
 
+  def test_id
+    @item.id(12345)
+    assert_equal "item=12345", @item.to_s
+  end
+
   def test_new_item
     item = Wowheadr::Entity::Item.new(12345).level(10)
     assert_equal "item=12345&amp;lvl=10", item.to_s

@@ -24,6 +24,7 @@ module Wowheadr
       def spell(id)
         self.set(:spell, id)
       end
+      alias :id :spell
 
       # Set the character's level, useful for spell scaling.
       def level(level)

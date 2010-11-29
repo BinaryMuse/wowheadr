@@ -24,6 +24,7 @@ module Wowheadr
       def item(id)
         self.set(:item, id)
       end
+      alias :id :item
 
       # Set the character's level, useful for heirloom items.
       def level(level)

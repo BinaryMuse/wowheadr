@@ -11,6 +11,11 @@ class SpellTest < Test::Unit::TestCase
     assert_equal "spell=33878", @spell.to_s
   end
 
+  def test_id
+    @spell.id(33878)
+    assert_equal "spell=33878", @spell.to_s
+  end
+
   def test_new_spell
     spell = Wowheadr::Entity::Spell.new(33878).level(10)
     assert_equal "spell=33878&amp;lvl=10", spell.to_s
