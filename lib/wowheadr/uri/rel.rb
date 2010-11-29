@@ -37,12 +37,6 @@ module Wowheadr
         end.join "&amp;"
       end
 
-      def self.method_missing(method_sym, *args, &block)
-        if self.respond_to? method_sym
-          self.call method_sym, args, block
-        end
-      end
-
       protected
 
         # Protected self.new to keep from being instantiated
