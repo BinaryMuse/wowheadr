@@ -25,7 +25,7 @@ Wowhead provides the ability to customize links to various entities on their sit
 
 For example, to get the `rel` attribute for a link to a "Bloodied Arcanite Reaper" (http://www.wowhead.com/item=42943) tuned for a level 25 character, you can use:
 
-    zinwrath = Wowheadr::Entity::Item.new(42943).level(25).to_s
+    zinwrath = Wowheadr::Entity::Item.id(42943).level(25).to_s
 
 (Calling `to_s` on any `Entity` class returns the text that should be placed in the `rel` attribute of your link, as shown:)
 
@@ -33,7 +33,7 @@ For example, to get the `rel` attribute for a link to a "Bloodied Arcanite Reape
 
 You can add enchants, gems, sockets, other set pieces, and more to an `Item`:
 
-    Wowheadr::Entity::Item.new(25697).gems(23121).enchant(2647).pieces(25695, 25696, 25697)
+    Wowheadr::Entity::Item.id(25697).gems(23121).enchant(2647).pieces(25695, 25696, 25697)
 
 ### Spells
 

@@ -6,6 +6,11 @@ class ItemTest < Test::Unit::TestCase
     @item = Wowheadr::Entity::Item.new
   end
 
+  def test_no_object
+    item = Wowheadr::Entity::Item.lvl(10).ench(501)
+    assert_equal "lvl=10&amp;ench=501", item.to_s
+  end
+
   def test_item
     @item.item(12345)
     assert_equal "item=12345", @item.to_s

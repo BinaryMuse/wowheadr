@@ -6,6 +6,11 @@ class SpellTest < Test::Unit::TestCase
     @spell = Wowheadr::Entity::Spell.new
   end
 
+  def test_no_object
+    spell = Wowheadr::Entity::Spell.id(51234).lvl(10)
+    assert_equal "spell=51234&amp;lvl=10", spell.to_s
+  end
+
   def test_spell
     @spell.spell(33878)
     assert_equal "spell=33878", @spell.to_s

@@ -1,4 +1,5 @@
 require 'wowheadr/uri/rel'
+require 'wowheadr/support/entity_method_mapper'
 
 module Wowheadr
   module Entity
@@ -8,6 +9,7 @@ module Wowheadr
     # http://www.wowhead.com/tooltips#related-advanced-usage
     class Item
       include Wowheadr::URI::Rel
+      include Wowheadr::Support::EntityMethodMapper
 
       # Create a new Item and optionally pass in the ID,
       # which automatically calls #item on the new object.
